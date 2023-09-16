@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="sub3-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="british-shorthair.html">BIRTISH SHORTHAIR</a></li>
+                <li><a href="ragdoll.html">RAGDOLL</a></li>
+                <li><a href="scottish-fold.html">SCOTTISH FOLD</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Scottish Fold</h1>
+    
+</section>
+
+<!-----ragdoll content----->
+<section class="bs">
+    <div class="row">
+        <div class="bs-text">
+            <h1>Overview</h1>
+            <p>The Highland Fold, often referred to as the Scottish Fold, has its origins rooted in the landscapes of Scotland.
+                These felines may come in brown, gray, white, and other delightful array of colours. They typically tip the scales
+                at a weight range of around 6 to 13 pounds and stand at a height of 8 to 10 inches. With a lifespan of 14 years, these 
+                loving cats have the potential to become your lifelong best friend. However, it's essential to note that this unique
+                breed carries a genetic trait for folded ears, which can be traced back to an unfortunate skeletal disorder. Despite this 
+                challenge, Scottish Folds are known for their easy-going and sociable nature, easily forming bonds with other pets and people.
+                For families considering their first feline companion., Scottish Folds prove to be an excellent choice. They are very playful
+                while possessing energy levels that fall within calm and maangeable range. 
+            </p>
+        </div>
+        <div class="bs-img">
+            <img src="images/sf1.png">
+        </div>
+    </div>
+</section>
+
+<section class="bs">
+    <div class="row2">
+        <div class="bs-img">
+            <img src="images/sf2.png">
+        </div>
+        <div class="bs-text">
+            <h1>Grooming and Care</h1>
+            <p>Scottish Folds have a relatively dense fur coat, which necessitates a weekly brushing routine to prevent the formation of troublesome
+                hairballs. Additionally, owners must regularly inspect their Scottish Fold's ears for any signs of irritation, inflection, or potential mites,
+                as their unique folded ears can lead to decreased airflow and increased susceptibility to ear issues. Maintaining these loving cats' well-being also
+                includes promoting good dental hygiene by brushing their teeth once a week, and keeping their nails trimmed every couple of weeks. Furthermore, Scottish
+                Folds derive great joy from engaging in interactive toy games and exploring elevated spaces around the house. While owners may be tired, these special 
+                cats can thrive in a harmonious household where playtime is balanced with peaceful and calm cuddling sessions. 
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!--- Footer --->
+<section class="footer">
+    <p>© Alice Zhang 2023. All Rights Reserved.</p>
+</section>
+
+
+<!-----JavaScript for Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

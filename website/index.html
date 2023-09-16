@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="british-shorthair.html">BIRTISH SHORTHAIR</a></li>
+                <li><a href="ragdoll.html">RAGDOLL</a></li>
+                <li><a href="scottish-fold.html">SCOTTISH FOLD</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>CatAlogue</h1>
+    <p>Discover the fascinating world of cats, as our website provides essential information on a wide range of cat breeds, to find your purrfect match.</p>
+</div>
+    
+</section>
+
+<!-----overview----->
+
+<section class="overview">
+    <h1>Overview of Cat Breeds</h1>
+
+    <div class="row">
+        <div class="overview-col">
+            <img src="images/british-shorthair.png">
+            <div class="layer">
+                <h3>BRITISH SHORTHAIR</h3>
+            </div>
+        </div>
+        <div class="overview-col">
+            <img src="images/ragdoll.png">
+            <div class="layer">
+                <h3>RAGDOLL</h3>
+            </div>
+        </div>
+        <div class="overview-col">
+            <img src="images/scottish-fold.png">
+            <div class="layer">
+                <h3>SCOTTISH FOLD</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--- Footer --->
+<section class="footer">
+    <p>© Alice Zhang 2023. All Rights Reserved.</p>
+</section>
+
+
+<!-----JavaScript for Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

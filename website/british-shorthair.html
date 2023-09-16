@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="british-shorthair.html">BIRTISH SHORTHAIR</a></li>
+                <li><a href="ragdoll.html">RAGDOLL</a></li>
+                <li><a href="scottish-fold.html">SCOTTISH FOLD</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>British Shorthair</h1>
+    
+</section>
+
+<!-----british shorthair content----->
+<section class="bs">
+    <div class="row">
+        <div class="bs-text">
+            <h1>Overview</h1>
+            <p>British Shorthairs, affectionately known as British Blues, trace their origins to the United Kingdom. These delightful felines have a 
+               short and densely textured coat that comes in a palette of colours, including white, black, blue, and silver. Weighing at a range of 7 
+               to 17 pounds with a lifespan of approximately 12 to 16 years, they are an enduring breed. This intelligent and family-friendly breed makes 
+               for the perfect household companion. British Shorthairs offer a balanced blend of sweetness and affection without ever becoming overly dependent 
+               or clingy. Their playful spirit and endless energy add joy to any home. Renowned for their easy-going and calm personality, these cats tend to 
+               get along with both people and other pets. However, it's worth noting that they are not hypoallergenic, which is a consideration for those with cat allergies.
+            </p>
+        </div>
+        <div class="bs-img">
+            <img src="images/p1.png">
+        </div>
+    </div>
+</section>
+
+<section class="bs">
+    <div class="row2">
+        <div class="bs-img">
+            <img src="images/bs-playing.png">
+        </div>
+        <div class="bs-text">
+            <h1>Grooming and Care</h1>
+            <p>Adopting a British Shorthair comes with the delightful perk of low grooming requirements. Gently brushing your cat with a soft licker brush once a week is usually
+                sufficient to keep your feline friend in tip-top shape. However, during shedding seasons, it's advisable to increase your brushing frequency to prevent loose fur all
+                over your home. In addition to grooming, regular maintenance is key to a happy and healthy cat. Owners must trim their nails every other week and clean their ears with 
+                pet-ear cleaner or gentle cotton ball once a week to ensure their cat stays clean. Furthermore, to keep your British Shorthair active and entertained, engage in playtime
+                multiple times a day. Owners may do this by encouraging their cats to chase toy mice or play with a feather wand. Providing plenty of climbing opportunities and scratching
+                posts throughout your home is equally important to keep your furry companion content and engaged.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--- Footer --->
+<section class="footer">
+    <p>© Alice Zhang 2023. All Rights Reserved.</p>
+</section>
+
+
+<!-----JavaScript for Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
